@@ -1,0 +1,79 @@
+drop view Laywer_view ;
+drop view Immigration_view ;
+drop view Bankruptcy_view ;
+
+create view Laywer_view as
+SELECT 
+    Laywer_ID,
+    type,
+    name,
+    address
+FROM Laywer;
+
+create or replace TRIGGER Laywer_trigger
+     INSTEAD OF insert ON Laywer_view
+     FOR EACH ROW
+BEGIN
+    insert into Laywer(
+        Laywer_ID,
+        type,
+        name,
+        address)
+    VALUES ( 
+        :NEW.Laywer_ID,
+        'Laywer',
+        :NEW.name,
+        :NEW.address) ;
+END;
+/
+
+create view Immigration_view as
+SELECT 
+    Laywer_ID,
+    type,
+    name,
+    address,
+FROM Laywer where type = 'Immigration' ;
+
+create or replace TRIGGER Immigration_trigger
+     INSTEAD OF insert ON Immigration_view
+     FOR EACH ROW
+BEGIN
+    insert into Laywer(
+        Laywer_ID,
+        type,
+        name,
+        address)
+    VALUES ( 
+        :NEW.Laywer_ID,
+        'Immigration',
+        :NEW.name,
+        :NEW.address) ;
+END;
+/
+
+create view Bankruptcy_view as
+SELECT 
+    Laywer_ID,
+    type,
+    name,
+    address,
+FROM Laywer where type = 'Bankruptcy' ;
+
+create or replace TRIGGER Bankruptcy_trigger
+     INSTEAD OF insert ON Bankruptcy_view
+     FOR EACH ROW
+BEGIN
+    insert into Laywer(
+        Laywer_ID,
+        type,
+        name,
+        address)
+    VALUES ( 
+        :NEW.Laywer_ID,
+        'Bankruptcy',
+        :NEW.name,
+        :NEW.address, ;
+END;
+/
+

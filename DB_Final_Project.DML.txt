@@ -1,0 +1,103 @@
+ALTER TABLE Lawyers_Edu disable CONSTRAINT Relation_10;
+
+ALTER TABLE FLC disable CONSTRAINT RelationN_11;
+
+ALTER TABLE FLC disable CONSTRAINT RelationN_12;
+
+ALTER TABLE FLC disable CONSTRAINT RelationN_13;
+
+ALTER TABLE Firm disable CONSTRAINT RelationN_5;
+
+ALTER TABLE Lawyers_Edu disable CONSTRAINT RelationN_9;
+
+
+
+truncate table FLC;
+
+truncate table Cases;
+
+truncate table Firm;
+
+truncate table School;
+
+truncate table Firm_Headquarters;
+
+truncate table Lawyers_Edu;
+
+truncate table Lawyers;
+
+insert into FLC(FLC_ID, Firm_ID, Lawyer_ID, Case_ID)
+values(1, 2, 1, 1);
+
+insert into FLC(FLC_ID, Firm_ID, Lawyer_ID, Case_ID)
+values(2, 2, 2, 1);
+
+insert into FLC(FLC_ID, Firm_ID, Lawyer_ID, Case_ID)
+values(3, 2, 3, 1);
+
+insert into Cases(Case_ID, "date", Courtroom)
+values(1, '09-nov-2012', 'U.S. Supreme Court');
+
+insert into Cases(Case_ID, "date", Courtroom)
+values(2, '11-nov-2012', 'U.S. Supreme Court');
+
+insert into Cases(Case_ID, "date", Courtroom)
+values(3, '13-nov-2012', 'U.S. Supreme Court');
+
+insert into Firm(Firm_ID, name, Firm_HQ_ID)
+values(1, 'Blue Devils', 1);
+
+insert into Firm(Firm_ID, name, Firm_HQ_ID)
+values(2, 'Pink Panthers', 2);
+
+insert into Firm(Firm_ID, name, Firm_HQ_ID)
+values(3, 'School of Rock', 2,);
+
+insert into Education(School_ID)
+values(1);
+
+insert into Education(School_ID)
+values(2);
+
+insert into Education(School_ID)
+values(3);
+
+insert into Firm_Headquarters(Firm_HQ_ID)
+values(3);
+
+insert into Firm_Headquarters(Firm_HQ_ID)
+values(1);
+
+insert into Firm_Headquarters(Firm_HQ_ID)
+values(2);
+
+insert into Lawyers_Edu(Lawyers_Edu_ID, School_ID, Lawyer_ID)
+values(1, 1, 1);
+
+insert into Lawyers_Edu(Lawyers_Edu_ID, School_ID, Lawyer_ID)
+values(2, 1, 2);
+
+insert into Lawyers_Edu(Lawyers_Edu_ID, School_ID, Lawyer_ID)
+values(3, 1, 3);
+
+insert into Lawyers(Lawyer_ID, NAME, address, phone, Firm_ID , type)
+values(1, 'James Brown', '1109 S', 512893233, 1, 'Bankruptcy');
+
+insert into Lawyers(Lawyer_ID, NAME, address, phone, Firm_ID, type)
+values(2, 'Harry Potter', '1109 N', 512893234, 2, 'Immigration');
+
+insert into Lawyers(Lawyer_ID, NAME, address, phone, Firm_ID, type)
+values(3, 'Ben Goessling', '1109 E', 512893235, 3, 'Bankruptcy');
+
+
+ALTER TABLE Lawyers_Edu enable CONSTRAINT Relation_10;
+
+ALTER TABLE FLC enable CONSTRAINT Relation_11;
+
+ALTER TABLE FLC enable CONSTRAINT Relation_12;
+
+ALTER TABLE FLC enable CONSTRAINT Relation_13;
+
+ALTER TABLE Firm enable CONSTRAINT Relation_5;
+
+ALTER TABLE Lawyers_Edu enable CONSTRAINT Relation_9;
