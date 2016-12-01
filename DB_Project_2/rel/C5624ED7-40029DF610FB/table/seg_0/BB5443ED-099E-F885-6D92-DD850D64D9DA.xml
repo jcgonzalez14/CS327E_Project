@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BB5443ED-099E-F885-6D92-DD850D64D9DA" name="Student">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>3CD5AD2F-75DF-C322-2D7B-8D2B58D73FEE</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="UT_EID" id="5AEE72FF-66A1-6A7A-BF28-0E3853CA001A">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>A3278D37-B4AD-EBAE-4330-A36FA2B62159</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="C7EAA6DC-126E-014C-5530-67D68F79943B">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>28F45523-7E2B-1860-5441-81BF93BEA01A</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="address" id="01695611-BD6B-D8AB-9544-823E2CE82BD1">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>698EB175-0186-D5EC-4BE3-C9191A275EAD</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" id="0FB71B8D-2F14-A83D-E5E3-2DA490800798">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>2E5D0969-72BC-2A2E-028B-135D413BCDC1</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="college_ID" id="F197C3B6-3353-69DE-3FFE-8B60E65776DA">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>FBA51BF6-C62B-1DA1-D9D5-CA88B71652A5</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="630D9894-D65F-3DB3-0459-0008EDB4850F" name="Student_PK">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>3233DA45-313B-C5C7-6DBF-360B0FF71B99</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5AEE72FF-66A1-6A7A-BF28-0E3853CA001A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ADBAD135-A937-E4A7-4168-B862523F7EF1" name="Student__IDX">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<ownerDesignName>rob_design11</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5349C05F-4016-E0CD-D1AD-2A8B0D705DEF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="F197C3B6-3353-69DE-3FFE-8B60E65776DA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

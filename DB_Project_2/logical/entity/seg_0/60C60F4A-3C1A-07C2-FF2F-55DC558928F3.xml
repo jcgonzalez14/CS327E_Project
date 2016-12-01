@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="60C60F4A-3C1A-07C2-FF2F-55DC558928F3" name="Major">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:13:12 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="major_ID" id="081DF0F5-C214-7A31-C4C3-6C3EC2BF0ED2">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:13:18 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="37C22863-4F16-3A26-0DB8-43CBD9EAB193">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:13:32 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="19574F8A-EF22-E8A8-5B63-26DC82BA874C" name="Major PK">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:13:31 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>081DF0F5-C214-7A31-C4C3-6C3EC2BF0ED2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

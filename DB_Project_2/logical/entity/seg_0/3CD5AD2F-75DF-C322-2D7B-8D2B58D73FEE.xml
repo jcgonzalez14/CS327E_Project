@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3CD5AD2F-75DF-C322-2D7B-8D2B58D73FEE" name="Student">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 02:59:36 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="UT_EID" id="A3278D37-B4AD-EBAE-4330-A36FA2B62159">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 02:59:57 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="name" id="28F45523-7E2B-1860-5441-81BF93BEA01A">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:03:30 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="address" id="698EB175-0186-D5EC-4BE3-C9191A275EAD">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:03:48 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="phone" id="2E5D0969-72BC-2A2E-028B-135D413BCDC1">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:04:05 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="college_ID" id="FBA51BF6-C62B-1DA1-D9D5-CA88B71652A5">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:11:52 UTC</createdTime>
+<generatorID>5349C05F-4016-E0CD-D1AD-2A8B0D705DEF</generatorID>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>6039E6F2-6EAD-EE0A-F663-CDEAA34837B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3233DA45-313B-C5C7-6DBF-360B0FF71B99" name="Student PK">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:03:28 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>A3278D37-B4AD-EBAE-4330-A36FA2B62159</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

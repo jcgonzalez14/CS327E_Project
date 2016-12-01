@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8E9F8986-8C6A-78EF-57F5-8F76F2A6D874" name="CSC">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:20:55 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="csc_ID" id="F4EBAD23-BF2D-7152-56D0-E21FA12F35F6">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:21:08 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="college_ID" id="00411198-B546-0D63-01A0-900867F3F321">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:22:02 UTC</createdTime>
+<generatorID>62ACE166-C39C-9E6B-9FB3-4BB92E076970</generatorID>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<referedAttribute>6039E6F2-6EAD-EE0A-F663-CDEAA34837B8</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="UT_EID" id="9820A4E8-EB31-18AE-37A7-D840CBE53F96">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:22:22 UTC</createdTime>
+<generatorID>884C193B-9797-3285-7E85-A766DF5C1DEE</generatorID>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<referedAttribute>A3278D37-B4AD-EBAE-4330-A36FA2B62159</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_ID" id="10D29CA6-BECA-BD1D-0157-B1BC2983A305">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:23:24 UTC</createdTime>
+<generatorID>ADE4DDC5-2CB0-5578-291A-7EEFBF254E3E</generatorID>
+<ownerDesignName>rob_design</ownerDesignName>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="true"/>
+</engineerTo>
+<referedAttribute>8D59C0FF-5B2F-BADB-1C78-34E32FD33D16</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="D724A9EF-4553-4CA2-78CF-EE378F569D26" name="CSC PK">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:21:20 UTC</createdTime>
+<ownerDesignName>rob_design</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="C5624ED7-0337-AD0F-72C4-40029DF610FB" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>F4EBAD23-BF2D-7152-56D0-E21FA12F35F6</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

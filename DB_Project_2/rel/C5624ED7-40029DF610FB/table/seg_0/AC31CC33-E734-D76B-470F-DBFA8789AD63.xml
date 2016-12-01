@@ -1,0 +1,115 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="AC31CC33-E734-D76B-470F-DBFA8789AD63" name="CSC">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>8E9F8986-8C6A-78EF-57F5-8F76F2A6D874</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="csc_ID" id="D462C709-0BDC-828E-7942-57DCC31EA08E">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>F4EBAD23-BF2D-7152-56D0-E21FA12F35F6</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="college_ID" id="50D322FB-8D84-0E9D-EBE0-F5326679EE3B">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>00411198-B546-0D63-01A0-900867F3F321</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="223BA31D-95C5-68D3-16A9-770D86C71814" referredColumn="93F5A448-6839-EFBD-3900-10CDCBAAD809"/>
+</associations>
+</Column>
+<Column name="UT_EID" id="56DBA5B6-50A7-E840-0D6D-E8AA614A0A4A">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>9820A4E8-EB31-18AE-37A7-D840CBE53F96</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C1D79B0C-9245-7AAB-4BBA-12AF57ED3EFD" referredColumn="5AEE72FF-66A1-6A7A-BF28-0E3853CA001A"/>
+</associations>
+</Column>
+<Column name="class_ID" id="5C4E5126-5CDF-7E84-B856-2E0E748F8F24">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>10D29CA6-BECA-BD1D-0157-B1BC2983A305</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3722BA64-9D42-CE3D-0D22-1FDD020EB1DA" referredColumn="3AEC29FF-673C-2B17-8034-BBFCFC7EB82F"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E1DCE60E-6E94-B569-88FA-2B6980C24CD5" name="CSC_PK">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>D724A9EF-4553-4CA2-78CF-EE378F569D26</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D462C709-0BDC-828E-7942-57DCC31EA08E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="59BDC3F5-CA66-EDF4-A352-21F884249EA7" name="Relation_11">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>62ACE166-C39C-9E6B-9FB3-4BB92E076970</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50D322FB-8D84-0E9D-EBE0-F5326679EE3B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="554FEAD2-BE43-0DAB-BE11-784264D922B8" name="Relation_12">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>884C193B-9797-3285-7E85-A766DF5C1DEE</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="56DBA5B6-50A7-E840-0D6D-E8AA614A0A4A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="202868E8-4038-868B-5FAA-28789FF27529" name="Relation_13">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>ADE4DDC5-2CB0-5578-291A-7EEFBF254E3E</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5C4E5126-5CDF-7E84-B856-2E0E748F8F24"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

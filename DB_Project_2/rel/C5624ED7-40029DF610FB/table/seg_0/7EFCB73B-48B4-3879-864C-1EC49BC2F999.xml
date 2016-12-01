@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7EFCB73B-48B4-3879-864C-1EC49BC2F999" name="College">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>488A7FDA-30AC-C863-01FF-F1DDB499F5CF</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="college_ID" id="93F5A448-6839-EFBD-3900-10CDCBAAD809">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>6039E6F2-6EAD-EE0A-F663-CDEAA34837B8</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="143EC236-4EE4-C280-89EF-898FB2B8B700">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>C9D8E276-A940-A388-B23B-F979F3E25020</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>256</dataTypeSize>
+<ownDataTypeParameters>256,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ranking_ID" id="7E2CAEDD-56BF-82F4-AF9A-AA156ED9BA6F">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>084EB416-2C26-16DF-03B0-BF96A0C4637F</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="81DD79C2-5812-16F4-1430-FA8EF4F19F47" referredColumn="2A7CD861-1763-F6D0-6583-ADC6F9F55724"/>
+</associations>
+</Column>
+<Column name="UT_EID" id="A71A1863-AFF7-D009-F090-FC16FFE08D49">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>1DB719B9-758E-14A7-D3DF-48F5276C8DD9</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="96452A42-8AD1-D93B-9695-F70DAA53F79C" name="College_PK">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>95A59669-F35B-7834-3BC1-CDC8E86C0216</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="93F5A448-6839-EFBD-3900-10CDCBAAD809"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D097CD92-3FEC-14E0-5D73-B4DD81A76A36" name="College__IDX">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<ownerDesignName>rob_design11</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>5349C05F-4016-E0CD-D1AD-2A8B0D705DEF</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A71A1863-AFF7-D009-F090-FC16FFE08D49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7528763-08AB-578A-7EEF-190A6419709E" name="Relation_5">
+<createdBy>Robert J</createdBy>
+<createdTime>2016-10-13 03:39:23 UTC</createdTime>
+<generatorID>7D0C9B80-AC7D-A1C0-A151-336B2E10A471</generatorID>
+<ownerDesignName>rob_design11</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E2CAEDD-56BF-82F4-AF9A-AA156ED9BA6F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
